@@ -38,6 +38,9 @@ header {
 .burguerMenu {
     font-size: 40px;
     margin: auto 5px;
+    padding: 0 5px;
+    border: 2px solid black;
+    background-color: rgb(4, 83, 30);
     
 }
 
@@ -71,7 +74,8 @@ header .menuHeader ul li{
     font-size: 15px;
     padding: 10px;
     color: rgb(4, 83, 30);
-   
+    
+    
 }
 
 
@@ -118,6 +122,7 @@ header .menuHeader ul li{
 
     header .menuHeader ul li {
         padding: 5px;
+        margin-top: 15px;
         
         
     }
@@ -141,9 +146,11 @@ header .menuHeader ul li{
 
 /* FOOTER */
 
+
+
 .redes ul {
     display: flex;
-    justify-content: end;
+    justify-content: center;
 
 }
 
@@ -161,11 +168,23 @@ header .menuHeader ul li{
 }
 
 
+.redes ul li a i{
+    width: 35px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
 .copyright {
     display: flex;
     justify-content: center;
+    background-color: rgb(4, 83, 30);
 
 }
+
+
 
 /* MEDIA QUERIES FOOTER */
 
@@ -176,6 +195,8 @@ header .menuHeader ul li{
         color: white;
         background-color: rgb(4, 83, 30);
         border-radius: 50%;
+        transition: all 1s;
+        
         
     }
 
@@ -183,16 +204,26 @@ header .menuHeader ul li{
         color: rgb(4, 83, 30);
         background-color: white;
         border:2px solid rgb(4, 83, 30);
-        padding: 20px;
+        
 
     }
+
+    .redes ul li a i{
+        width: 45px;
+        height: 40px;
+        justify-content: center;
+        text-align: center;
+    
+    }
+
+    
 
 }
 
 /* FIN FOOTER */
 
 
-/* MAIN */
+/* MAIN INICIO */
 
 
 
@@ -205,6 +236,7 @@ main .contenidoMain {
     "video video video"
     "img1 img2 img3"
     ;
+    
 }
 
 main div img{
@@ -219,10 +251,12 @@ main div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding: 5px;
 }
 
 .img1 {
     grid-area: img1;
+    padding-left: 5px;
 
 }
 
@@ -232,9 +266,30 @@ main div img{
 
 .img3 {
     grid-area: img3;
+    padding-right: 5px;
+}
+
+/* MEDIA QUERIES INICIO */
+
+@media screen and (min-width:675px){
+    .img1, .img2, .img3 {
+        transition: all 1s;
+    }
+
+
+    .img1:hover, .img2:hover, .img3:hover { 
+        scale: 1.2;
+        
+    }
+
+
 }
 
 /* CONTACTO */
+
+.mainContacto{
+    margin-top: 30px;
+}
 
 .texto{
     padding: 10px;
@@ -302,7 +357,7 @@ main div img{
 }
 
 .ubicacion .direccion h5{
-    padding: 0 0 25px 5px;
+    padding: 5px 0 20px 0px;
 }
 
 .ubicacion .dondeEstamos{
@@ -365,7 +420,9 @@ main div img{
 
 .mainServicios .enlaces li{
     background-color: rgb(4, 83, 30);
-    padding: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
     
 }
 
