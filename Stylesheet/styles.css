@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10000;
+}
+
+.menuHeader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: white;
+}
+
+.burguerMenu {
+    font-size: 40px;
+    margin: auto 5px;
+    
+}
+
+input#menu {
+    display: none;
+  } 
+
+input#menu:checked ~ .menuHeader {
+    display: block;
+}  
+
+header .menuHeader .cruzSalir {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    
+}
+
+header .menuHeader ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+header .menuHeader ul li{
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(4, 83, 30);
+   
+}
+
+
+.logo {
+    margin: 3px auto;
+    
+}
+
+
+/* MEDIA QUERIES HEADER */
+
+@media screen and (min-width:675px) {
+    header{
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
+    .burguerMenu{
+        display: none;
+    }  
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .menuHeader {
+        display: flex;
+        position: inherit;
+        
+    }
+
+    header .menuHeader .cruzSalir {
+        display: none;
+       }
+
+    header .menuHeader ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        
+    }
+
+    header .menuHeader ul li {
+        padding: 5px;
+        
+        
+    }
+
+    .menuHeader ul li a{
+        color:rgb(4, 83, 30);
+        padding: 5px;
+        
+        
+    }
+
+    .menuHeader ul li a:hover{
+        background-color: rgb(4, 83, 30);
+        border-radius: 5px;
+        color: white;
+        
+    }
+    
+}
+/* FIN HEADER */
+
+/* FOOTER */
+
+.redes ul {
+    display: flex;
+    justify-content: end;
+
+}
+
+.redes ul li {
+    padding: 20px;
+}
+
+.redes ul li a {
+    font-size: 27px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(4, 83, 30);
+    border-radius: 50%;
+    
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* MEDIA QUERIES FOOTER */
+
+@media screen and (min-width:675px){
+    .redes ul li a {
+        font-size: 40px;
+        padding: 10px;
+        color: white;
+        background-color: rgb(4, 83, 30);
+        border-radius: 50%;
+        
+    }
+
+    .redes ul li a:hover{
+        color: rgb(4, 83, 30);
+        background-color: white;
+        border:2px solid rgb(4, 83, 30);
+        padding: 20px;
+
+    }
+
+}
+
+/* FIN FOOTER */
+
+
+/* MAIN */
+
+
+
+main .contenidoMain {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 550px 250px;
+    grid-template-areas: 
+    "video video video"
+    "img1 img2 img3"
+    ;
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px 0;
+}
+
+.video {
+    grid-area: video;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1 {
+    grid-area: img1;
+
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+/* CONTACTO */
+
+.texto{
+    padding: 10px;
+    margin: 5px;
+    resize: none;
+}
+.email{
+    padding: 10px;
+    margin: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.name{
+    padding: 10px;
+    margin: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+}
+ .enviar{
+    margin:auto;
+    border-radius: 5px;
+    
+}
+.limpiar{
+    margin: auto;
+    border-radius: 5px;
+
+} 
+
+.mainContacto{
+    display: grid;
+    min-height: 90vh; 
+ 
+}
+
+.contacto{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.mapa{
+    width: 250px;
+    height: 250px;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.ubicacion .direccion{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.ubicacion .direccion h5{
+    padding: 0 0 25px 5px;
+}
+
+.ubicacion .dondeEstamos{
+    padding: 10px 5px;
+}
+
+/* MEDIA QUERIES CONTACTO */
+
+@media screen and (min-width:675px){
+    
+    .mainContacto{
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-areas: 
+        "ubicacion form";
+        justify-content: center;
+       align-items: center;
+    }
+    .contacto{
+        
+        grid-area: form;
+    }
+
+    .ubicacion{
+        
+        grid-area: ubicacion;
+        margin-left: 80px;
+    }
+
+    
+}
+
+/* FIN CONTACTO */
+
+/* SOBRE NOSOTROS */
+
+.mainAbout{
+    min-height: 90vh;
+}
+
+.mainAbout .aboutUs{
+    padding: 15px 0 30px 5px; 
+}
+
+.mainAbout p{
+    padding: 0 20px 80px 20px;
+}
+
+/* FIN SOBRE NOSOTROS */
+
+/* NUESTROS SERVICIOS */
+
+.mainServicios .enlaces{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+
+}
+
+.mainServicios .enlaces li{
+    background-color: rgb(4, 83, 30);
+    padding: 10px;
+    
+}
+
+.mainServicios .enlaces li a{
+    color: white;
+    text-decoration: underline;
+}
+
+.tituloServicios{
+    text-decoration: underline;
+    font-style: italic;
+    padding: 20px 5px;
+    color: rgb(4, 83, 30);
+    
+}
+
+.mainServicios img{
+    width: 100%;
+    height: auto;
+}
+
+/* FIN NUESTROS SERVICIOS */
+
+/* PRESUPUESTO */
+
+.presupuesto{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    
+    
+}
+
+.presupuesto legend{
+    font-size: 20px;
+}
+
+.presupuesto input {
+    font-size: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.presupuesto #archivo{
+    font-size: 15px;
+    border: 3px black dashed;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.presupuesto textarea{
+    resize: none;
+}
+
+.presupuesto button{
+    margin: auto;
+    padding: 5px 50px;
+}
+

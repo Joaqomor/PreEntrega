@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../images/favicon-16x16.png" >
+    <link rel="stylesheet" href="../Stylesheet/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    
+    <header>
+
+        <label for="menu" class="burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" id="menu">
+
+
+        <div class="logo">
+            <a  href="../index.html" ><img  src="../images/logomobile.jpg" alt="logo" > </a> 
+        </div>
+      
+
+        <nav class="menuHeader">
+
+            <label for="menu" class="cruzSalir">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </label>
+
+            <ul>    
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="nuestroServicios.html">Nuestros Servicios</a></li>
+                <li><a href="presupuesto.html">Presupuestos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+           
+    </header>
+
+    <main class="mainContacto">
+
+        <form class="contacto" action="/ruta" method="get">
+
+
+            <legend class="titulo">¿En que podemos ayudarte?</legend>
+
+            <input class="name" placeholder="Nombre" type="text" name="Name" id="Nombre" required>
+            <input class="email" placeholder="Correo electronico" type="email" name="email" id="email" required>
+                
+            <textarea class="texto" name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje..." cols="30" rows="10"></textarea>
+            
+            <div class="botones">
+                <button class="enviar" type="reset">Enviar formulario</button>
+                <button class="limpiar" type="submit">Limpiar formulario</button>
+            </div>
+            
+         
+        </form>
+        <div class="ubicacion">
+
+            <h4 class="dondeEstamos">¿Donde estamos?</h4>
+
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.088252684354!2d2.1590676153857484!3d41.37216727926552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a266370653f1%3A0x6945e02ce9f3071c!2sCarrer%20de%20Blasco%20de%20Garay%2C%2052%2C%2008004%20Barcelona!5e0!3m2!1ses!2ses!4v1647173995862!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="direccion">    
+            <h5 >Carrer de blasco de garay, 52</h5>
+            <h5 >Barcelona España</h5>
+            </div>
+        </div>
+        
+
+
+    </main>
+         
+    <footer>
+
+        <div class="redes">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">copyright © 2022 TIBURON VERDE,S.A</p>
+
+
+    </footer>
+
+    
+</body>
+</html>
