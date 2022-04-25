@@ -1,0 +1,25 @@
+{
+  "name": "joaquin-morillo-sampedro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path sass sass/StyleSass.scss Stylesheet/Style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joaqomor/PreEntrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joaqomor/PreEntrega/issues"
+  },
+  "homepage": "https://github.com/Joaqomor/PreEntrega#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

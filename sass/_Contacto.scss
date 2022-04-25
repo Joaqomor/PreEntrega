@@ -1,0 +1,72 @@
+/* CONTACTO */
+
+.mainContacto{
+    margin-top: 30px;
+    display: grid;
+    min-height: 90vh;
+    .contacto{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        .texto{
+            padding: 10px;
+            margin: 5px;
+            resize: none;
+            max-width: 310px;
+        }
+        .email{
+            padding: 10px;
+            margin: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            max-width: 310px;
+        }
+        .name{
+            padding: 10px;
+            margin: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            max-width: 310px; 
+        }
+        .botones{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .enviar{
+                margin:auto;
+                border-radius: 5px;
+                
+            }
+            .limpiar{
+                margin: auto;
+                border-radius: 5px;
+            
+            } 
+        }
+        
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        .mapa{
+            width: 250px;
+            height: 250px;
+        }
+        .dondeEstamos{
+            padding: 10px 5px;
+        }
+        .direccion{
+            display: flex;
+            flex-direction: row;
+            h5{
+                padding: 5px 0 20px 0px;
+            }
+            
+        }
+        
+    }  
+}
+
+/* FIN CONTACTO */

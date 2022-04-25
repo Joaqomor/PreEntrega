@@ -1,0 +1,32 @@
+/* FOOTER */
+
+.redes ul {
+    display: flex;
+    justify-content: center;
+    li {
+        padding: 20px;
+        a {
+            font-size: 27px;
+            padding: 5px;
+            color: white;
+            background-color: $primaryColor;
+            border-radius: 50%;
+            i{
+                width: 35px;
+                height: 30px;
+                justify-content: center;
+                text-align: center;
+            
+            }
+            
+        }
+    }
+
+}.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: $primaryColor;
+
+}
+
+/* FIN FOOTER */

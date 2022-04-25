@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* VARIABLES */
+
+
+$primaryColor: rgb(4, 83, 30);
+
+
+/* VARIABLES */
+
+@import 'header';
+@import 'Footer';
+@import 'index';
+@import 'contacto';
+@import 'SobreNosotros';
+@import 'NuestroServicios';
+@import 'presupuesto';
+@import 'MediaQueries';

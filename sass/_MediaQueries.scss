@@ -1,0 +1,119 @@
+/* MEDIA QUERIES HEADER */
+
+$bp-tablet: 675px;
+
+@media (min-width: $bp-tablet) {
+
+    header{
+        position: sticky;
+        top: 0;
+        background-color: white;
+        .burguerMenu{
+            display: none;
+        }
+        .logo {
+            margin-left: 0;
+        }
+        .menuHeader {
+            display: flex;
+            position: inherit;
+            .cruzSalir {
+                display: none;
+               }
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                li {
+                    padding: 5px;
+                    margin-top: 15px;
+                    a{
+                        color:$primaryColor;
+                        padding: 5px;
+                    }
+                    a:hover{
+                        background-color: $primaryColor;
+                        border-radius: 5px;
+                        color: white;
+                    }
+                }
+            }
+            
+        } 
+    }
+  
+}
+/* FIN MEDIA QUERIES HEADER */
+
+/* MEDIA QUERIES FOOTER */
+
+@media (min-width: $bp-tablet){
+    .redes ul li a {
+        font-size: 40px;
+        padding: 10px;
+        color: white;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        transition: all 1s;
+        i{
+            width: 45px;
+            height: 40px;
+            justify-content: center;
+            text-align: center;
+        
+        }
+        
+        
+    }
+    .redes ul li a:hover{
+        color: $primaryColor;
+        background-color: white;
+        border:2px solid $primaryColor;
+        
+
+    }
+}
+
+/* FIN MEDIA QUERIES FOOTER */
+
+/* MEDIA QUERIES INICIO */
+
+@media (min-width: $bp-tablet){
+    .img1, .img2, .img3 {
+        transition: all 1s;
+    }
+
+
+    .img1:hover, .img2:hover, .img3:hover { 
+        scale: 1.2;
+        
+    }
+
+}
+
+/* FIN MEDIA QUERIES INICIO */
+
+/* MEDIA QUERIES CONTACTO */
+
+@media (min-width: $bp-tablet){
+    .mainContacto{
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-areas: 
+        "ubicacion form";
+        justify-content: center;
+       align-items: center;
+       .contacto{
+        
+        grid-area: form;
+        }
+        .ubicacion{
+        
+            grid-area: ubicacion;
+            margin-left: 80px;
+        }
+    }
+
+}
+
+/* FIN MEDIA QUERIES CONTACTO */

@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/* VARIABLES */
+/* VARIABLES */
+/* HEADER */
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10000; }
+  header .burguerMenu {
+    font-size: 40px;
+    margin: auto 5px;
+    padding: 0 5px;
+    border: 2px solid black;
+    background-color: #04531e; }
+  header input#menu {
+    display: none; }
+  header input#menu:checked ~ .menuHeader {
+    display: block; }
+  header .logo {
+    margin: 3px auto; }
+  header .menuHeader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; }
+    header .menuHeader .cruzSalir {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 20px; }
+    header .menuHeader ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%; }
+      header .menuHeader ul li {
+        font-size: 15px;
+        padding: 10px;
+        color: #04531e; }
+
+/* FIN HEADER */
+/* FOOTER */
+.redes ul {
+  display: flex;
+  justify-content: center; }
+  .redes ul li {
+    padding: 20px; }
+    .redes ul li a {
+      font-size: 27px;
+      padding: 5px;
+      color: white;
+      background-color: #04531e;
+      border-radius: 50%; }
+      .redes ul li a i {
+        width: 35px;
+        height: 30px;
+        justify-content: center;
+        text-align: center; }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #04531e; }
+
+/* FIN FOOTER */
+/* MAIN INICIO */
+main .contenidoMain {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 550px 250px;
+  grid-template-areas: "video video video" "img1 img2 img3"; }
+  main .contenidoMain img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px 0; }
+  main .contenidoMain .video {
+    grid-area: video;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px; }
+  main .contenidoMain .img1 {
+    grid-area: img1;
+    padding-left: 5px; }
+  main .contenidoMain .img2 {
+    grid-area: img2; }
+  main .contenidoMain .img3 {
+    grid-area: img3;
+    padding-right: 5px; }
+
+/* FIN MAIN INICIO */
+/* CONTACTO */
+.mainContacto {
+  margin-top: 30px;
+  display: grid;
+  min-height: 90vh; }
+  .mainContacto .contacto {
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .contacto .texto {
+      padding: 10px;
+      margin: 5px;
+      resize: none;
+      max-width: 310px; }
+    .mainContacto .contacto .email {
+      padding: 10px;
+      margin: 5px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      max-width: 310px; }
+    .mainContacto .contacto .name {
+      padding: 10px;
+      margin: 5px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      max-width: 310px; }
+    .mainContacto .contacto .botones {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      .mainContacto .contacto .botones .enviar {
+        margin: auto;
+        border-radius: 5px; }
+      .mainContacto .contacto .botones .limpiar {
+        margin: auto;
+        border-radius: 5px; }
+  .mainContacto .ubicacion {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+    .mainContacto .ubicacion .mapa {
+      width: 250px;
+      height: 250px; }
+    .mainContacto .ubicacion .dondeEstamos {
+      padding: 10px 5px; }
+    .mainContacto .ubicacion .direccion {
+      display: flex;
+      flex-direction: row; }
+      .mainContacto .ubicacion .direccion h5 {
+        padding: 5px 0 20px 0px; }
+
+/* FIN CONTACTO */
+/* SOBRE NOSOTROS */
+.mainAbout {
+  min-height: 90vh; }
+  .mainAbout .aboutUs {
+    padding: 15px 0 30px 5px; }
+    .mainAbout .aboutUs p {
+      padding: 0 20px 80px 20px; }
+
+/* FIN SOBRE NOSOTROS */
+/* NUESTROS SERVICIOS */
+.mainServicios .enlaces {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; }
+  .mainServicios .enlaces li {
+    background-color: #04531e;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px; }
+    .mainServicios .enlaces li a {
+      color: white;
+      text-decoration: underline; }
+
+.mainServicios .tituloServicios {
+  text-decoration: underline;
+  font-style: italic;
+  padding: 20px 5px;
+  color: #04531e; }
+
+.mainServicios img {
+  width: 100%;
+  height: auto; }
+
+/* FIN NUESTROS SERVICIOS */
+/* PRESUPUESTO */
+.presupuesto {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh; }
+  .presupuesto legend {
+    font-size: 20px; }
+  .presupuesto input {
+    font-size: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none; }
+  .presupuesto #archivo {
+    font-size: 15px;
+    border: 3px black dashed;
+    align-items: center;
+    padding: 40px 20px; }
+  .presupuesto textarea {
+    resize: none; }
+  .presupuesto button {
+    margin: auto;
+    padding: 5px 50px; }
+
+/* FIN PRESUPUESTO */
+/* MEDIA QUERIES HEADER */
+@media (min-width: 675px) {
+  header {
+    position: sticky;
+    top: 0;
+    background-color: white; }
+    header .burguerMenu {
+      display: none; }
+    header .logo {
+      margin-left: 0; }
+    header .menuHeader {
+      display: flex;
+      position: inherit; }
+      header .menuHeader .cruzSalir {
+        display: none; }
+      header .menuHeader ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; }
+        header .menuHeader ul li {
+          padding: 5px;
+          margin-top: 15px; }
+          header .menuHeader ul li a {
+            color: #04531e;
+            padding: 5px; }
+          header .menuHeader ul li a:hover {
+            background-color: #04531e;
+            border-radius: 5px;
+            color: white; } }
+
+/* FIN MEDIA QUERIES HEADER */
+/* MEDIA QUERIES FOOTER */
+@media (min-width: 675px) {
+  .redes ul li a {
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    background-color: #04531e;
+    border-radius: 50%;
+    transition: all 1s; }
+    .redes ul li a i {
+      width: 45px;
+      height: 40px;
+      justify-content: center;
+      text-align: center; }
+  .redes ul li a:hover {
+    color: #04531e;
+    background-color: white;
+    border: 2px solid #04531e; } }
+
+/* FIN MEDIA QUERIES FOOTER */
+/* MEDIA QUERIES INICIO */
+@media (min-width: 675px) {
+  .img1, .img2, .img3 {
+    transition: all 1s; }
+  .img1:hover, .img2:hover, .img3:hover {
+    scale: 1.2; } }
+
+/* FIN MEDIA QUERIES INICIO */
+/* MEDIA QUERIES CONTACTO */
+@media (min-width: 675px) {
+  .mainContacto {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-areas: "ubicacion form";
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .contacto {
+      grid-area: form; }
+    .mainContacto .ubicacion {
+      grid-area: ubicacion;
+      margin-left: 80px; } }
+
+/* FIN MEDIA QUERIES CONTACTO */

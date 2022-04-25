@@ -1,0 +1,35 @@
+/* PRESUPUESTO */
+
+.presupuesto{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    legend{
+        font-size: 20px;
+    }
+    input {
+        font-size: 15px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    #archivo{
+        font-size: 15px;
+        border: 3px black dashed;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    textarea{
+        resize: none;
+    }
+    button{
+        margin: auto;
+        padding: 5px 50px;
+    }
+    
+    
+}
+
+/* FIN PRESUPUESTO */
+

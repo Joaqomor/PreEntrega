@@ -1,0 +1,63 @@
+/* HEADER */
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10000;
+    .burguerMenu {
+        font-size: 40px;
+        margin: auto 5px;
+        padding: 0 5px;
+        border: 2px solid black;
+        background-color: $primaryColor;
+        
+    }
+    input#menu {
+        display: none;
+      } 
+    
+    input#menu:checked ~ .menuHeader {
+        display: block;
+    }
+    .logo {
+        margin: 3px auto;
+        
+    }
+    .menuHeader {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        background-color: white;
+        .cruzSalir {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            li{
+                font-size: 15px;
+                padding: 10px;
+                color: $primaryColor;
+                
+                
+            }
+            
+        }
+    }
+}
+
+/* FIN HEADER */
+

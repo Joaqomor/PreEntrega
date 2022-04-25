@@ -1,0 +1,37 @@
+/* NUESTROS SERVICIOS */
+
+.mainServicios {
+    .enlaces{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        li{
+            background-color: $primaryColor;
+            padding: 7px;
+            border-radius: 5px;
+            margin-top: 10px;
+            a{
+                color: white;
+                text-decoration: underline;
+            }
+            
+        }
+        
+    
+    }
+    .tituloServicios{
+        text-decoration: underline;
+        font-style: italic;
+        padding: 20px 5px;
+        color: $primaryColor;
+        
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* FIN NUESTROS SERVICIOS */
+   

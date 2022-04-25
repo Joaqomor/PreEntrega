@@ -1,0 +1,42 @@
+/* MAIN INICIO */
+
+main .contenidoMain {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 550px 250px;
+    grid-template-areas: 
+    "video video video"
+    "img1 img2 img3";
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 5px 0;
+    }
+    .video {
+        grid-area: video;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 5px;
+    }
+    .img1 {
+        grid-area: img1;
+        padding-left: 5px;
+    
+    }
+    
+    .img2 {
+        grid-area: img2;
+    }
+    
+    .img3 {
+        grid-area: img3;
+        padding-right: 5px;
+    }
+    
+    
+}
+
+/* FIN MAIN INICIO */
