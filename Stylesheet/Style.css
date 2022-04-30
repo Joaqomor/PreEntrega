@@ -246,10 +246,10 @@ main .contenidoMain {
           header .menuHeader ul li a {
             color: #04531e;
             padding: 5px; }
-          header .menuHeader ul li a:hover {
-            background-color: #04531e;
-            border-radius: 5px;
-            color: white; } }
+            header .menuHeader ul li a:hover {
+              background-color: #04531e;
+              border-radius: 5px;
+              color: white; } }
 
 /* FIN MEDIA QUERIES HEADER */
 /* MEDIA QUERIES FOOTER */
@@ -261,15 +261,15 @@ main .contenidoMain {
     background-color: #04531e;
     border-radius: 50%;
     transition: all 1s; }
+    .redes ul li a:hover {
+      color: #04531e;
+      background-color: white;
+      border: 2px solid #04531e; }
     .redes ul li a i {
       width: 45px;
       height: 40px;
       justify-content: center;
-      text-align: center; }
-  .redes ul li a:hover {
-    color: #04531e;
-    background-color: white;
-    border: 2px solid #04531e; } }
+      text-align: center; } }
 
 /* FIN MEDIA QUERIES FOOTER */
 /* MEDIA QUERIES INICIO */

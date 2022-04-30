@@ -27,15 +27,17 @@ $bp-tablet: 675px;
                 li {
                     padding: 5px;
                     margin-top: 15px;
+                    
                     a{
                         color:$primaryColor;
                         padding: 5px;
+                        &:hover{
+                            background-color: $primaryColor;
+                            border-radius: 5px;
+                            color: white;
+                        }
                     }
-                    &:hover{
-                        background-color: $primaryColor;
-                        border-radius: 5px;
-                        color: white;
-                    }
+                    
                 }
             }
             
@@ -55,23 +57,25 @@ $bp-tablet: 675px;
         background-color: $primaryColor;
         border-radius: 50%;
         transition: all 1s;
+        &:hover{
+            color: $primaryColor;
+            background-color: white;
+            border:2px solid $primaryColor;
+            
+    
+        }
         i{
             width: 45px;
             height: 40px;
             justify-content: center;
             text-align: center;
+            
         
         }
         
         
     }
-    &:hover{
-        color: $primaryColor;
-        background-color: white;
-        border:2px solid $primaryColor;
-        
-
-    }
+    
 }
 
 /* FIN MEDIA QUERIES FOOTER */
