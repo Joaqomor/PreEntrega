@@ -32,44 +32,55 @@
         color: $primaryColor;
         
     }
-    img{
+   /*  img{
         width: 70%;
         height: auto;
         
+    } */
+
+
+    .serPlegadora{
+        font-size: map-get($estilos,fontsize);
+        color: map-get($estilos, color);
+        border-radius: map-get($estilos, borde);
+        background-color: map-get($estilos,background);
+        padding: map-get($estilos,espaciado); 
+        margin: map-get($estilos,margen);
     }
 
-    .cizalla, .plegadora, .cilindro {
-        margin: 20px;
+    .serCizalla{
+        @extend .serPlegadora;
+        color: white;
+        background-color: red;
+
     }
 
-   
-
-    .ser__Plegadora{
-        font-size: map-get($estilosServicios,fontsize);
-        color: map-get($estilosServicios, color);
-        border-radius: map-get($estilosServicios, borde);
-        background-color: map-get($estilosServicios,background);
-        padding: map-get($estilosServicios,espaciado); 
-        margin: map-get($estilosServicios,margen);
+    .serCilindro{
+        @extend .serPlegadora;
+        color: white;
+        background-color: black;
     }
 
-    .ser__Cizalla{
-        font-size: map-get($estilosServicios,fontsize);
-        color: map-get($estilosServicios, color);
-        border-radius: map-get($estilosServicios, borde);
-        background-color: map-get($estilosServicios,background);
-        padding: map-get($estilosServicios,espaciado); 
-        margin: map-get($estilosServicios,margen);
+    @mixin imgSize ($width,$height){
+        width: $width;
+        height: $height;
+
     }
 
-    .ser__Cilindro{
-        font-size: map-get($estilosServicios,fontsize);
-        color: map-get($estilosServicios, color);
-        border-radius: map-get($estilosServicios, borde);
-        background-color: map-get($estilosServicios,background);
-        padding: map-get($estilosServicios,espaciado); 
-        margin: map-get($estilosServicios,margen);
+    .plegadora{
+        @include imgSize (70%,auto)
+
     }
+
+    .cizalla{
+        @include imgSize (90%,auto)
+    }
+
+    .cilindro{
+        @include imgSize (50%,auto)
+    }
+        
+    
         
     }
 

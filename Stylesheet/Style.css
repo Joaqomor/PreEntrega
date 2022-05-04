@@ -174,61 +174,56 @@ main .contenidoMain {
 
 /* FIN SOBRE NOSOTROS */
 /* NUESTROS SERVICIOS */
-.mainServicios .enlaces {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px; }
-  .mainServicios .enlaces li {
-    background-color: #04531e;
-    padding: 7px;
-    border-radius: 5px;
-    margin-top: 10px; }
-    .mainServicios .enlaces li a {
-      color: white;
-      text-decoration: underline; }
-
-.mainServicios .ServiciosContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.mainServicios .tituloServicios {
-  text-decoration: underline;
-  font-style: italic;
-  padding: 20px 5px;
-  color: #04531e; }
-
-.mainServicios img {
-  width: 70%;
-  height: auto; }
-
-.mainServicios .cizalla, .mainServicios .plegadora, .mainServicios .cilindro {
-  margin: 20px; }
-
-.mainServicios .ser__Plegadora {
-  font-size: 15px;
-  color: black;
-  border-radius: 20px;
-  background-color: grey;
-  padding: 15px;
-  margin: 10px; }
-
-.mainServicios .ser__Cizalla {
-  font-size: 15px;
-  color: black;
-  border-radius: 20px;
-  background-color: grey;
-  padding: 15px;
-  margin: 10px; }
-
-.mainServicios .ser__Cilindro {
-  font-size: 15px;
-  color: black;
-  border-radius: 20px;
-  background-color: grey;
-  padding: 15px;
-  margin: 10px; }
+.mainServicios {
+  /*  img{
+        width: 70%;
+        height: auto;
+        
+    } */ }
+  .mainServicios .enlaces {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; }
+    .mainServicios .enlaces li {
+      background-color: #04531e;
+      padding: 7px;
+      border-radius: 5px;
+      margin-top: 10px; }
+      .mainServicios .enlaces li a {
+        color: white;
+        text-decoration: underline; }
+  .mainServicios .ServiciosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .mainServicios .tituloServicios {
+    text-decoration: underline;
+    font-style: italic;
+    padding: 20px 5px;
+    color: #04531e; }
+  .mainServicios .serPlegadora, .mainServicios .serCizalla, .mainServicios .serCilindro {
+    font-size: 15px;
+    color: black;
+    border-radius: 20px;
+    background-color: grey;
+    padding: 10px;
+    margin: 10px; }
+  .mainServicios .serCizalla {
+    color: white;
+    background-color: red; }
+  .mainServicios .serCilindro {
+    color: white;
+    background-color: black; }
+  .mainServicios .plegadora {
+    width: 70%;
+    height: auto; }
+  .mainServicios .cizalla {
+    width: 90%;
+    height: auto; }
+  .mainServicios .cilindro {
+    width: 50%;
+    height: auto; }
 
 /* FIN NUESTROS SERVICIOS */
 /* PRESUPUESTO */
