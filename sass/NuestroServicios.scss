@@ -19,6 +19,12 @@
         
     
     }
+    .ServiciosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .tituloServicios{
         text-decoration: underline;
         font-style: italic;
@@ -27,11 +33,49 @@
         
     }
     img{
-        width: 100%;
+        width: 70%;
         height: auto;
+        
     }
 
-}
+    .cizalla, .plegadora, .cilindro {
+        margin: 20px;
+    }
+
+   
+
+    .ser__Plegadora{
+        font-size: map-get($estilosServicios,fontsize);
+        color: map-get($estilosServicios, color);
+        border-radius: map-get($estilosServicios, borde);
+        background-color: map-get($estilosServicios,background);
+        padding: map-get($estilosServicios,espaciado); 
+        margin: map-get($estilosServicios,margen);
+    }
+
+    .ser__Cizalla{
+        font-size: map-get($estilosServicios,fontsize);
+        color: map-get($estilosServicios, color);
+        border-radius: map-get($estilosServicios, borde);
+        background-color: map-get($estilosServicios,background);
+        padding: map-get($estilosServicios,espaciado); 
+        margin: map-get($estilosServicios,margen);
+    }
+
+    .ser__Cilindro{
+        font-size: map-get($estilosServicios,fontsize);
+        color: map-get($estilosServicios, color);
+        border-radius: map-get($estilosServicios, borde);
+        background-color: map-get($estilosServicios,background);
+        padding: map-get($estilosServicios,espaciado); 
+        margin: map-get($estilosServicios,margen);
+    }
+        
+    }
+
+
+
+
 
 /* FIN NUESTROS SERVICIOS */
    
