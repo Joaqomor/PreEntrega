@@ -25,9 +25,9 @@ $primaryColor: rgb(4, 83, 30);
 
 $estilos: (
     fontsize: 15px,
-    color: black,
+    color: white,
     borde: 20px,
-    background: grey,
+    background: $primaryColor,
     espaciado: 10px,
     margen: 10px,
     );

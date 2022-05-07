@@ -6,8 +6,9 @@
 } */
 
 .carousel-inner{
-    width: 100%;
-   /*  height: 650px; */
+    width: 90%;
+    margin: auto;
+   
 }
 
 .carousel-caption{
@@ -36,11 +37,12 @@ main .contenidoMain {
     "img3 img3 img3 ";
     
     img{
-        width: 100%;
+        width: 92%;
+        margin: auto;
         height: 100%;
         object-fit: cover;
         padding: 5px 0;
-    }
+    } 
     .video {
         grid-area: video;
         width: 80%;

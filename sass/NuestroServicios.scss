@@ -30,16 +30,13 @@
         font-style: italic;
         padding: 20px 5px;
         color: $primaryColor;
+        text-align: center;
         
     }
-   /*  img{
-        width: 70%;
-        height: auto;
-        
-    } */
+  
 
 
-    .serPlegadora{
+    .serPlegadora, .serCizalla, .serCilindro{
         font-size: map-get($estilos,fontsize);
         color: map-get($estilos, color);
         border-radius: map-get($estilos, borde);
@@ -48,41 +45,27 @@
         margin: map-get($estilos,margen);
     }
 
-    .serCizalla{
-        @extend .serPlegadora;
-        color: white;
-        background-color: red;
-
-    }
-
-    .serCilindro{
-        @extend .serPlegadora;
-        color: white;
-        background-color: black;
-    }
-
+   
     @mixin imgSize ($width,$height){
         width: $width;
         height: $height;
 
     }
 
-    .plegadora{
-        @include imgSize (70%,auto)
-
-    }
-
-    .cizalla{
-        @include imgSize (90%,auto)
-    }
-
-    .cilindro{
-        @include imgSize (50%,auto)
-    }
+    .plegadora, .cizalla, .cilindro {
         
+        @include imgSize (90%,auto);
+        margin:auto;
+        display: block;
+        
+
+    }
+}
+   
+   
     
         
-    }
+    
 
 
 

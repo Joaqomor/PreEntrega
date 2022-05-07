@@ -91,8 +91,8 @@ header {
     opacity: 0.2;
 } */
 .carousel-inner {
-  width: 100%;
-  /*  height: 650px; */ }
+  width: 90%;
+  margin: auto; }
 
 .carousel-caption {
   bottom: initial;
@@ -106,11 +106,10 @@ main .contenidoMain {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: 250px 250px 250px;
-  grid-template-areas: "img2 img2 img2 "
- "img1 img1 img1 "
- "img3 img3 img3 "; }
+  grid-template-areas: "img2 img2 img2 " "img1 img1 img1 " "img3 img3 img3 "; }
   main .contenidoMain img {
-    width: 100%;
+    width: 92%;
+    margin: auto;
     height: 100%;
     object-fit: cover;
     padding: 5px 0; }
@@ -195,63 +194,54 @@ main .contenidoMain {
     padding: 25px;
     margin: 10px;
     border-radius: 25px;
-    background-color: #04531e;
-    opacity: 0.85; }
+    background-color: #04531e; }
+    .mainAbout div h2 {
+      color: white; }
     .mainAbout div p {
-      font-size: 13px; }
+      font-size: 13px;
+      color: white; }
 
 /* FIN SOBRE NOSOTROS */
 /* NUESTROS SERVICIOS */
-.mainServicios {
-  /*  img{
-        width: 70%;
-        height: auto;
-        
-    } */ }
-  .mainServicios .enlaces {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px; }
-    .mainServicios .enlaces li {
-      background-color: #04531e;
-      padding: 7px;
-      border-radius: 5px;
-      margin-top: 10px; }
-      .mainServicios .enlaces li a {
-        color: white;
-        text-decoration: underline; }
-  .mainServicios .ServiciosContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .mainServicios .tituloServicios {
-    text-decoration: underline;
-    font-style: italic;
-    padding: 20px 5px;
-    color: #04531e; }
-  .mainServicios .serPlegadora, .mainServicios .serCizalla, .mainServicios .serCilindro {
-    font-size: 15px;
-    color: black;
-    border-radius: 20px;
-    background-color: grey;
-    padding: 10px;
-    margin: 10px; }
-  .mainServicios .serCizalla {
-    color: white;
-    background-color: red; }
-  .mainServicios .serCilindro {
-    color: white;
-    background-color: black; }
-  .mainServicios .plegadora {
-    width: 70%;
-    height: auto; }
-  .mainServicios .cizalla {
-    width: 90%;
-    height: auto; }
-  .mainServicios .cilindro {
-    width: 50%;
-    height: auto; }
+.mainServicios .enlaces {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; }
+  .mainServicios .enlaces li {
+    background-color: #04531e;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px; }
+    .mainServicios .enlaces li a {
+      color: white;
+      text-decoration: underline; }
+
+.mainServicios .ServiciosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.mainServicios .tituloServicios {
+  text-decoration: underline;
+  font-style: italic;
+  padding: 20px 5px;
+  color: #04531e;
+  text-align: center; }
+
+.mainServicios .serPlegadora, .mainServicios .serCizalla, .mainServicios .serCilindro {
+  font-size: 15px;
+  color: white;
+  border-radius: 20px;
+  background-color: #04531e;
+  padding: 10px;
+  margin: 10px; }
+
+.mainServicios .plegadora, .mainServicios .cizalla, .mainServicios .cilindro {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: block; }
 
 /* FIN NUESTROS SERVICIOS */
 /* PRESUPUESTO */
@@ -348,7 +338,8 @@ main .contenidoMain {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 5px 0; }
+    padding: 5px 0;
+    margin: auto; }
   .img1 {
     grid-area: img1;
     padding-left: 5px; }
@@ -387,8 +378,7 @@ main .contenidoMain {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
-    grid-template-areas: "about historia"
- "mision vision"; }
+    grid-template-areas: "about historia" "mision vision"; }
     .mainAbout .aboutUs {
       grid-area: about; }
     .mainAbout .historia {
@@ -405,3 +395,24 @@ main .contenidoMain {
         font-size: 22px; } }
 
 /* FIN MEDIA QUERIES SOBRE NOSOTROS */
+/* MEDIA QUERIES NUESTROS SERVICIOS */
+@media (min-width: 675px) {
+  .mainServicios .enlaces {
+    display: none; }
+  .mainServicios .ServiciosContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 33%);
+    grid-template-areas: "ple plecon" "cizcon ciz" "cil cilcon"; }
+  .mainServicios .cilindroContainer {
+    grid-area: cilcon; }
+  .mainServicios .plegadoraContainer {
+    grid-area: plecon; }
+  .mainServicios cizallaContainer {
+    grid-area: cizcon; }
+  .mainServicios .cilindro {
+    grid-area: cil; }
+  .mainServicios .plegadora {
+    grid-area: ple; }
+  .mainServicios .cizalla {
+    grid-area: ciz; } }

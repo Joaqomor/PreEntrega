@@ -112,6 +112,7 @@
         height: 100%;
         object-fit: cover;
         padding: 5px 0;
+        margin: auto;
     }
     
     .img1 {
@@ -206,7 +207,47 @@
 
 }
 
-
-
-
 /* FIN MEDIA QUERIES SOBRE NOSOTROS */
+
+/* MEDIA QUERIES NUESTROS SERVICIOS */
+
+@media (min-width: $bp-tablet){
+    
+    .mainServicios{
+        .enlaces{
+            display: none;
+        } 
+        .ServiciosContainer{
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows: repeat(3,33%);
+            grid-template-areas: 
+            "ple plecon"
+            "cizcon ciz"
+            "cil cilcon";
+
+        }
+        .cilindroContainer{
+            grid-area: cilcon;
+
+        }
+        .plegadoraContainer{
+            grid-area: plecon;
+        }
+        cizallaContainer{
+            grid-area: cizcon;
+        }
+        .cilindro{
+            grid-area: cil;
+        }
+        .plegadora{
+            grid-area: ple;
+
+        }
+        .cizalla{
+            grid-area: ciz;
+        }
+        
+    }
+
+    }
