@@ -91,9 +91,8 @@ $bp-tablet: 675px;
     main .contenidoMain {
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 550px 250px ;
+    grid-template-rows: 250px ;
     grid-template-areas: 
-    "video video video "
     "img1 img2 img3 ";
     }
     
@@ -131,6 +130,16 @@ $bp-tablet: 675px;
     .img3 {
         grid-area: img3;
         padding-right: 5px;
+    }
+    .carousel-caption{
+        top: 10%;
+        .tituloCarousel{
+            font-size: 65px;
+            color: $primaryColor;
+        }
+        .cartelCarousel{
+            font-size: 30px;
+        }
     }
 
 }
