@@ -1,13 +1,23 @@
 /* SOBRE NOSOTROS */
 
 .mainAbout{
-    min-height: 90vh;
-    .aboutUs{
-        padding: 15px 0 30px 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    div{
+        padding: 25px;
+        margin: 10px;
+        border-radius: 25px;
+        background-color: $primaryColor;
+        opacity: 0.85;
         p{
-            padding: 0 20px 80px 20px;
-        } 
+            font-size: 13px;
+        }
+        
     }
+    
+   
 }
 
 /* FIN SOBRE NOSOTROS */

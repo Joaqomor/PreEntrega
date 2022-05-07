@@ -1,6 +1,6 @@
 /* MEDIA QUERIES HEADER */
 
-$bp-tablet: 675px;
+
 
 @media (min-width: $bp-tablet) {
 
@@ -17,6 +17,7 @@ $bp-tablet: 675px;
         .menuHeader {
             display: flex;
             position: inherit;
+            background-color: white;
             .cruzSalir {
                 display: none;
                }
@@ -112,15 +113,7 @@ $bp-tablet: 675px;
         object-fit: cover;
         padding: 5px 0;
     }
-    .video {
-        grid-area: video;
-        width: 80%;
-        height: 100%;
-        object-fit: cover;
-        padding: 5px;
-        margin: 0 auto;
-        
-    }
+    
     .img1 {
         grid-area: img1;
         padding-left: 5px;
@@ -174,3 +167,46 @@ $bp-tablet: 675px;
 }
 
 /* FIN MEDIA QUERIES CONTACTO */
+
+/* MEDIA QUERIES SOBRE NOSOTROS */ 
+
+@media (min-width: $bp-desktop){
+    .mainAbout{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+        grid-template-areas:
+        "about historia"
+        "mision vision";
+        .aboutUs{
+            grid-area: about;
+        }
+        .historia{
+            grid-area: historia;
+        }
+        .mision{
+            grid-area: mision;
+        }
+        .vision{
+            grid-area: vision;
+        }
+        h2{
+            font-size: 55px;
+        }
+        div {
+            margin: 35px;
+            p{
+                font-size: 22px;
+                }
+
+        }
+            
+    }
+    
+
+}
+
+
+
+
+/* FIN MEDIA QUERIES SOBRE NOSOTROS */

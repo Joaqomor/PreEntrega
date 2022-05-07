@@ -23,8 +23,8 @@ header {
   z-index: 10000; }
   header .burguerMenu {
     font-size: 40px;
-    margin: auto 5px;
-    padding: 0 5px;
+    margin: 3px 10px;
+    padding: 0 10px;
     border-radius: 10px;
     background-color: #04531e; }
   header input#menu {
@@ -40,7 +40,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white; }
+    background-color: #04531e; }
     header .menuHeader .cruzSalir {
       position: absolute;
       top: 15px;
@@ -57,6 +57,8 @@ header {
         font-size: 15px;
         padding: 10px;
         color: #04531e; }
+        header .menuHeader ul li a {
+          color: white; }
 
 /* FIN HEADER */
 /* FOOTER */
@@ -185,15 +187,27 @@ main .contenidoMain {
 /* FIN CONTACTO */
 /* SOBRE NOSOTROS */
 .mainAbout {
-  min-height: 90vh; }
-  .mainAbout .aboutUs {
-    padding: 15px 0 30px 5px; }
-    .mainAbout .aboutUs p {
-      padding: 0 20px 80px 20px; }
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+  .mainAbout div {
+    padding: 25px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #04531e;
+    opacity: 0.85; }
+    .mainAbout div p {
+      font-size: 13px; }
 
 /* FIN SOBRE NOSOTROS */
 /* NUESTROS SERVICIOS */
-
+.mainServicios {
+  /*  img{
+        width: 70%;
+        height: auto;
+        
+    } */ }
   .mainServicios .enlaces {
     display: flex;
     justify-content: space-between;
@@ -277,7 +291,8 @@ main .contenidoMain {
       margin-left: 0; }
     header .menuHeader {
       display: flex;
-      position: inherit; }
+      position: inherit;
+      background-color: white; }
       header .menuHeader .cruzSalir {
         display: none; }
       header .menuHeader ul {
@@ -334,13 +349,6 @@ main .contenidoMain {
     height: 100%;
     object-fit: cover;
     padding: 5px 0; }
-  .video {
-    grid-area: video;
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
-    padding: 5px;
-    margin: 0 auto; }
   .img1 {
     grid-area: img1;
     padding-left: 5px; }
@@ -373,3 +381,27 @@ main .contenidoMain {
       margin-left: 80px; } }
 
 /* FIN MEDIA QUERIES CONTACTO */
+/* MEDIA QUERIES SOBRE NOSOTROS */
+@media (min-width: 1000px) {
+  .mainAbout {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: "about historia"
+ "mision vision"; }
+    .mainAbout .aboutUs {
+      grid-area: about; }
+    .mainAbout .historia {
+      grid-area: historia; }
+    .mainAbout .mision {
+      grid-area: mision; }
+    .mainAbout .vision {
+      grid-area: vision; }
+    .mainAbout h2 {
+      font-size: 55px; }
+    .mainAbout div {
+      margin: 35px; }
+      .mainAbout div p {
+        font-size: 22px; } }
+
+/* FIN MEDIA QUERIES SOBRE NOSOTROS */
