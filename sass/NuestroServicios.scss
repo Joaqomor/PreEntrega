@@ -39,7 +39,7 @@
     .serPlegadora, .serCizalla, .serCilindro{
         font-size: map-get($estilos,fontsize);
         color: map-get($estilos, color);
-        border-radius: map-get($estilos, borde);
+        border-radius: 2px 25px;
         background-color: map-get($estilos,background);
         padding: map-get($estilos,espaciado); 
         margin: map-get($estilos,margen);

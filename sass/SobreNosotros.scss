@@ -8,11 +8,14 @@
     div{
         padding: 25px;
         margin: 10px;
-        border-radius: 25px;
+        border-radius: 5px 70px;
         background-color: $primaryColor;
         
         h2{
             color: white;
+            i{
+                margin-right: 15px;
+            }
         }
         p{
             font-size: 13px;

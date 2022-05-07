@@ -12,6 +12,12 @@ a {
   text-decoration: none;
   color: black; }
 
+/* body{
+    background-image: url(../images/fondo.jpg);
+} */
+/* footer{
+    background-color: black;
+} */
 /* VARIABLES */
 /* VARIABLES */
 /* HEADER */
@@ -82,7 +88,8 @@ header {
 .copyright {
   display: flex;
   justify-content: center;
-  background-color: #04531e; }
+  background-color: #04531e;
+  margin-bottom: 0; }
 
 /* FIN FOOTER */
 /* MAIN INICIO */
@@ -193,10 +200,12 @@ main .contenidoMain {
   .mainAbout div {
     padding: 25px;
     margin: 10px;
-    border-radius: 25px;
+    border-radius: 5px 70px;
     background-color: #04531e; }
     .mainAbout div h2 {
       color: white; }
+      .mainAbout div h2 i {
+        margin-right: 15px; }
     .mainAbout div p {
       font-size: 13px;
       color: white; }
@@ -232,7 +241,7 @@ main .contenidoMain {
 .mainServicios .serPlegadora, .mainServicios .serCizalla, .mainServicios .serCilindro {
   font-size: 15px;
   color: white;
-  border-radius: 20px;
+  border-radius: 2px 25px;
   background-color: #04531e;
   padding: 10px;
   margin: 10px; }
@@ -376,6 +385,7 @@ main .contenidoMain {
 @media (min-width: 1000px) {
   .mainAbout {
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
     grid-template-areas: "about historia" "mision vision"; }
@@ -390,7 +400,7 @@ main .contenidoMain {
     .mainAbout h2 {
       font-size: 55px; }
     .mainAbout div {
-      margin: 35px; }
+      margin: 10px 25px; }
       .mainAbout div p {
         font-size: 22px; } }
 
@@ -402,6 +412,7 @@ main .contenidoMain {
   .mainServicios .ServiciosContainer {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    grid-row-gap: 50px;
     grid-template-rows: repeat(3, 33%);
     grid-template-areas: "ple plecon" "cizcon ciz" "cil cilcon"; }
   .mainServicios .cilindroContainer {
