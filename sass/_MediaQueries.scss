@@ -215,13 +215,13 @@
 @media (min-width: $bp-tablet){
     
     .mainServicios{
+       
         .enlaces{
             display: none;
         } 
         .ServiciosContainer{
             display: grid;
             grid-template-columns: repeat(2,50%);
-            grid-row-gap: 50px;
             grid-template-rows: repeat(3,33%);
             grid-template-areas: 
             "ple plecon"
@@ -236,7 +236,7 @@
         .plegadoraContainer{
             grid-area: plecon;
         }
-        cizallaContainer{
+        .cizallaContainer{
             grid-area: cizcon;
         }
         .cilindro{

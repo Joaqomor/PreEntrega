@@ -412,14 +412,13 @@ main .contenidoMain {
   .mainServicios .ServiciosContainer {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-row-gap: 50px;
     grid-template-rows: repeat(3, 33%);
     grid-template-areas: "ple plecon" "cizcon ciz" "cil cilcon"; }
   .mainServicios .cilindroContainer {
     grid-area: cilcon; }
   .mainServicios .plegadoraContainer {
     grid-area: plecon; }
-  .mainServicios cizallaContainer {
+  .mainServicios .cizallaContainer {
     grid-area: cizcon; }
   .mainServicios .cilindro {
     grid-area: cil; }
