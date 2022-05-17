@@ -5,6 +5,9 @@
   font-family: 'Smooch', cursive;
   font-family: 'Staatliches', cursive; }
 
+body {
+  background-color: #474444; }
+
 li {
   list-style: none; }
 
@@ -248,7 +251,7 @@ main .contenidoMain {
 .mainServicios .tituloServicios {
   text-decoration: underline;
   font-style: italic;
-  color: #04531e;
+  color: white;
   text-align: center;
   padding: 20px 5px; }
 
@@ -276,7 +279,9 @@ main .contenidoMain {
     justify-content: center;
     min-height: 90vh; }
     .mainPresupuesto .presupuesto legend {
-      font-size: 20px; }
+      font-size: 20px;
+      background-color: #04531e;
+      text-align: center; }
     .mainPresupuesto .presupuesto input {
       font-size: 15px;
       border-top: none;
