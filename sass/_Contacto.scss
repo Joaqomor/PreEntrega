@@ -1,14 +1,24 @@
 /* CONTACTO */
 
 .mainContacto{
-    margin-top: 30px;
+    
     display: grid;
     min-height: 90vh;
+    background-image: url(../images/fondo.jpg);
+    
+    
+    
     
     .contacto{
         display: grid;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
+        .titulo{
+            background-color: $primaryColor;
+            text-align: center;
+            font-size: 20px;
+        }
         
         .texto{
             padding: 10px;
@@ -36,13 +46,17 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
             .enviar{
-                margin:auto;
+                margin: auto;
+                padding: 5px 40px;
                 border-radius: 5px;
+                background-color: $primaryColor ;
                 
             }
             .limpiar{
                 margin: auto;
+                padding: 5px 40px;
                 border-radius: 5px;
+                background-color: red;
             
             } 
         }
@@ -51,19 +65,30 @@
     .ubicacion{
         display: flex;
         flex-direction: column;
-        margin:auto;
+        margin: 10px auto;
+        justify-content: center;
         .mapa{
-            width: 250px;
-            height: 250px;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            
         }
         .dondeEstamos{
-            padding: 10px 5px;
+            margin: 10px 5px;
+            text-align: center;
+            font-size: 20px;
+            background-color: $primaryColor ;
+            
+            
+
         }
         .direccion{
             display: flex;
             flex-direction: row;
             h5{
-                padding: 5px 0 20px 0px;
+                margin: 5px 20px 20px 0px;
+                background-color: $primaryColor;
+                font-size: 20px;
             }
             
         }

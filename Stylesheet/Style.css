@@ -12,12 +12,9 @@ a {
   text-decoration: none;
   color: black; }
 
-/* body{
-    background-image: url(../images/fondo.jpg);
-} */
-/* footer{
-    background-color: black;
-} */
+::placeholder {
+  color: black; }
+
 /* VARIABLES */
 /* VARIABLES */
 /* HEADER */
@@ -140,13 +137,18 @@ main .contenidoMain {
 /* FIN MAIN INICIO */
 /* CONTACTO */
 .mainContacto {
-  margin-top: 30px;
   display: grid;
-  min-height: 90vh; }
+  min-height: 90vh;
+  background-image: url(../images/fondo.jpg); }
   .mainContacto .contacto {
     display: grid;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 10px; }
+    .mainContacto .contacto .titulo {
+      background-color: #04531e;
+      text-align: center;
+      font-size: 20px; }
     .mainContacto .contacto .texto {
       padding: 10px;
       margin: 5px;
@@ -171,24 +173,35 @@ main .contenidoMain {
       grid-template-columns: repeat(2, 1fr); }
       .mainContacto .contacto .botones .enviar {
         margin: auto;
-        border-radius: 5px; }
+        padding: 5px 40px;
+        border-radius: 5px;
+        background-color: #04531e; }
       .mainContacto .contacto .botones .limpiar {
         margin: auto;
-        border-radius: 5px; }
+        padding: 5px 40px;
+        border-radius: 5px;
+        background-color: red; }
   .mainContacto .ubicacion {
     display: flex;
     flex-direction: column;
-    margin: auto; }
+    margin: 10px auto;
+    justify-content: center; }
     .mainContacto .ubicacion .mapa {
-      width: 250px;
-      height: 250px; }
+      margin: auto;
+      width: 300px;
+      height: 300px; }
     .mainContacto .ubicacion .dondeEstamos {
-      padding: 10px 5px; }
+      margin: 10px 5px;
+      text-align: center;
+      font-size: 20px;
+      background-color: #04531e; }
     .mainContacto .ubicacion .direccion {
       display: flex;
       flex-direction: row; }
       .mainContacto .ubicacion .direccion h5 {
-        padding: 5px 0 20px 0px; }
+        margin: 5px 20px 20px 0px;
+        background-color: #04531e;
+        font-size: 20px; }
 
 /* FIN CONTACTO */
 /* SOBRE NOSOTROS */
@@ -196,7 +209,8 @@ main .contenidoMain {
   width: 80%;
   display: flex;
   flex-direction: column;
-  margin: auto; }
+  margin: auto;
+  min-height: 90vh; }
   .mainAbout div {
     padding: 25px;
     margin: 10px;
@@ -234,9 +248,9 @@ main .contenidoMain {
 .mainServicios .tituloServicios {
   text-decoration: underline;
   font-style: italic;
-  padding: 20px 5px;
   color: #04531e;
-  text-align: center; }
+  text-align: center;
+  padding: 20px 5px; }
 
 .mainServicios .serPlegadora, .mainServicios .serCizalla, .mainServicios .serCilindro {
   font-size: 15px;
@@ -254,28 +268,31 @@ main .contenidoMain {
 
 /* FIN NUESTROS SERVICIOS */
 /* PRESUPUESTO */
-.presupuesto {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  min-height: 90vh; }
-  .presupuesto legend {
-    font-size: 20px; }
-  .presupuesto input {
-    font-size: 15px;
-    border-top: none;
-    border-left: none;
-    border-right: none; }
-  .presupuesto #archivo {
-    font-size: 15px;
-    border: 3px black dashed;
+.mainPresupuesto {
+  background-image: url(../images/fondo.jpg); }
+  .mainPresupuesto .presupuesto {
+    display: grid;
     align-items: center;
-    padding: 40px 20px; }
-  .presupuesto textarea {
-    resize: none; }
-  .presupuesto button {
-    margin: auto;
-    padding: 5px 50px; }
+    justify-content: center;
+    min-height: 90vh; }
+    .mainPresupuesto .presupuesto legend {
+      font-size: 20px; }
+    .mainPresupuesto .presupuesto input {
+      font-size: 15px;
+      border-top: none;
+      border-left: none;
+      border-right: none; }
+    .mainPresupuesto .presupuesto #archivo {
+      font-size: 15px;
+      border: 2px black dashed;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: white; }
+    .mainPresupuesto .presupuesto textarea {
+      resize: none; }
+    .mainPresupuesto .presupuesto .botonPresupuesto {
+      margin: auto;
+      padding: 5px 50px; }
 
 /* FIN PRESUPUESTO */
 /* MEDIA QUERIES HEADER */
@@ -333,9 +350,9 @@ main .contenidoMain {
 /* MEDIA QUERIES INICIO */
 @media (min-width: 675px) {
   .img1, .img2, .img3 {
-    transition: all 1s; }
+    transition: all 0.2s; }
   .img1:hover, .img2:hover, .img3:hover {
-    scale: 1.2; }
+    opacity: 0.5; }
   main .contenidoMain {
     display: grid;
     grid-template-columns: repeat(3, 33%);
@@ -370,15 +387,17 @@ main .contenidoMain {
 @media (min-width: 675px) {
   .mainContacto {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, 50%);
     grid-template-areas: "ubicacion form";
     justify-content: center;
     align-items: center; }
     .mainContacto .contacto {
       grid-area: form; }
     .mainContacto .ubicacion {
-      grid-area: ubicacion;
-      margin-left: 80px; } }
+      grid-area: ubicacion; }
+      .mainContacto .ubicacion .mapa {
+        width: 350px;
+        height: 350px; } }
 
 /* FIN MEDIA QUERIES CONTACTO */
 /* MEDIA QUERIES SOBRE NOSOTROS */

@@ -1,36 +1,40 @@
 /* PRESUPUESTO */
-
-.presupuesto{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    min-height: 90vh;
-   
-    legend{
-        font-size: 20px;
-    }
-    input {
-        font-size: 15px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-    }
-    #archivo{
-        font-size: 15px;
-        border: 3px black dashed;
+.mainPresupuesto{
+    background-image: url(../images/fondo.jpg);
+    .presupuesto{
+        display: grid;
         align-items: center;
-        padding: 40px 20px;
+        justify-content: center;
+        min-height: 90vh;
+       
+        legend{
+            font-size: 20px;
+        }
+        input {
+            font-size: 15px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #archivo{
+            font-size: 15px;
+            border: 2px black dashed;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: white;
+        }
+        textarea{
+            resize: none;
+        }
+        .botonPresupuesto{
+            margin: auto;
+            padding: 5px 50px;
+        }
+        
+        
     }
-    textarea{
-        resize: none;
-    }
-    button{
-        margin: auto;
-        padding: 5px 50px;
-    }
-    
-    
 }
+
 
 /* FIN PRESUPUESTO */
 

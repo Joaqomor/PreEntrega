@@ -85,12 +85,12 @@
 
 @media (min-width: $bp-tablet){
     .img1, .img2, .img3 {
-        transition: all 1s;
+        transition: all 0.2s;
     }
 
 
     .img1:hover, .img2:hover, .img3:hover { 
-        scale: 1.2;
+        opacity: 0.5;
         
     }
     main .contenidoMain {
@@ -113,21 +113,26 @@
         object-fit: cover;
         padding: 5px 0;
         margin: auto;
+        
+
     }
     
     .img1 {
         grid-area: img1;
         padding-left: 5px;
+        
     
     }
     
     .img2 {
         grid-area: img2;
+        
     }
     
     .img3 {
         grid-area: img3;
         padding-right: 5px;
+        
     }
     .carousel-caption{
         top: 10%;
@@ -149,11 +154,12 @@
 @media (min-width: $bp-tablet){
     .mainContacto{
         display: grid;
-        grid-template-columns: repeat(2, 400px);
+        grid-template-columns: repeat(2, 50%);
         grid-template-areas: 
         "ubicacion form";
         justify-content: center;
        align-items: center;
+       
        .contacto{
         
         grid-area: form;
@@ -161,8 +167,13 @@
         .ubicacion{
         
             grid-area: ubicacion;
-            margin-left: 80px;
+            
+            .mapa{
+                width: 350px;
+                height: 350px;
+            }
         }
+
     }
 
 }
