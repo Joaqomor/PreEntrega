@@ -294,7 +294,8 @@ main .contenidoMain {
       padding: 40px 20px;
       background-color: white; }
     .mainPresupuesto .presupuesto textarea {
-      resize: none; }
+      resize: none;
+      background-color: white; }
     .mainPresupuesto .presupuesto .botonPresupuesto {
       margin: auto;
       padding: 5px 50px;
@@ -400,6 +401,10 @@ main .contenidoMain {
     align-items: center; }
     .mainContacto .contacto {
       grid-area: form; }
+    .mainContacto .botones .enviar:hover {
+      background-color: grey; }
+    .mainContacto .botones .limpiar:hover {
+      background-color: grey; }
     .mainContacto .ubicacion {
       grid-area: ubicacion; }
       .mainContacto .ubicacion .mapa {
@@ -452,3 +457,11 @@ main .contenidoMain {
     grid-area: ple; }
   .mainServicios .cizalla {
     grid-area: ciz; } }
+
+/* FIN MEDIA QUERIES NUESTROS SERVICIOS */
+/* MEDIA QUERIES PRESUPUESTO */
+@media (min-width: 675px) {
+  .presupuesto .botonPresupuesto:hover {
+    background-color: grey; } }
+
+/* FIN MEDIA QUERIES PRESUPUESTO */

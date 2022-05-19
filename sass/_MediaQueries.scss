@@ -164,6 +164,21 @@
         
         grid-area: form;
         }
+        .botones {
+            .enviar{
+                &:hover{
+                    background-color: grey;
+                }
+            }
+        }
+        .botones {
+            .limpiar{
+                &:hover{
+                    background-color: grey;
+                }
+            }
+        }
+        
         .ubicacion{
         
             grid-area: ubicacion;
@@ -265,3 +280,21 @@
     }
 
     }
+
+    /* FIN MEDIA QUERIES NUESTROS SERVICIOS */
+
+    /* MEDIA QUERIES PRESUPUESTO */
+
+    @media (min-width: $bp-tablet){
+        .presupuesto {
+            .botonPresupuesto{
+                &:hover{
+                    background-color: grey;
+                }
+            }
+        }
+
+    }
+
+    /* FIN MEDIA QUERIES PRESUPUESTO */
+
