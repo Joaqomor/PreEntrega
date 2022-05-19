@@ -6,7 +6,7 @@
   font-family: 'Staatliches', cursive; }
 
 body {
-  background-color: #474444; }
+  background-color: #7d7b7b; }
 
 li {
   list-style: none; }
@@ -151,7 +151,8 @@ main .contenidoMain {
     .mainContacto .contacto .titulo {
       background-color: #04531e;
       text-align: center;
-      font-size: 20px; }
+      font-size: 20px;
+      color: white; }
     .mainContacto .contacto .texto {
       padding: 10px;
       margin: 5px;
@@ -178,12 +179,14 @@ main .contenidoMain {
         margin: auto;
         padding: 5px 40px;
         border-radius: 5px;
-        background-color: #04531e; }
+        background-color: #04531e;
+        color: white; }
       .mainContacto .contacto .botones .limpiar {
         margin: auto;
         padding: 5px 40px;
         border-radius: 5px;
-        background-color: red; }
+        background-color: red;
+        color: white; }
   .mainContacto .ubicacion {
     display: flex;
     flex-direction: column;
@@ -197,14 +200,16 @@ main .contenidoMain {
       margin: 10px 5px;
       text-align: center;
       font-size: 20px;
-      background-color: #04531e; }
+      background-color: #04531e;
+      color: white; }
     .mainContacto .ubicacion .direccion {
       display: flex;
       flex-direction: row; }
       .mainContacto .ubicacion .direccion h5 {
         margin: 5px 20px 20px 0px;
         background-color: #04531e;
-        font-size: 20px; }
+        font-size: 18px;
+        color: white; }
 
 /* FIN CONTACTO */
 /* SOBRE NOSOTROS */
@@ -281,7 +286,8 @@ main .contenidoMain {
     .mainPresupuesto .presupuesto legend {
       font-size: 20px;
       background-color: #04531e;
-      text-align: center; }
+      text-align: center;
+      color: white; }
     .mainPresupuesto .presupuesto input {
       font-size: 15px;
       border-top: none;
@@ -300,7 +306,8 @@ main .contenidoMain {
       margin: auto;
       padding: 5px 50px;
       border-radius: 5px;
-      background-color: #04531e; }
+      background-color: #04531e;
+      color: white; }
 
 /* FIN PRESUPUESTO */
 /* MEDIA QUERIES HEADER */
